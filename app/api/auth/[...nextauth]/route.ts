@@ -21,12 +21,13 @@ const handler = NextAuth({
         //  return null;
 
         return {
-          id: "fhjdas",
-          email: "hi there",
+          id: "hi there",
+          email: credentials.username,
         };
       },
     }),
   ],
+  secret: process.env.NEXTAUTH_SECRET
 });
 
 export { handler as GET, handler as POST };

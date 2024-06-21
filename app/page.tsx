@@ -1,8 +1,10 @@
-import { signIn,signOut } from "next-auth/react";
+
+import Appbar from "../components/Appbar";
 
 export default function Home() {
   return (
     <div>
+      <Appbar/>
       
     </div>
   );
